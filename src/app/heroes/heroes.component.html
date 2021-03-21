@@ -15,7 +15,4 @@
 </ul>
 
 <h2>Selected Hero Details</h2>
-<div *ngIf="selectedHero">
-    <p>Id: {{ selectedHero.id }}</p>
-    <p>Name: {{ selectedHero.name}}</p>
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
